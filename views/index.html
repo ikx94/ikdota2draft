@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+{{>head}}
+
+<body>
+
+<script type="text/javascript" src="/files/js/views/index.js"></script>
+<div id="fb-root"></div>
+
+{{>mainHeader}}
+
+<div id="bodyFirstBorder">
+    <div id="bodySecondBorder">
+        <div id="body">
+
+            <div id="newsAndStats">
+
+                <section id="news">
+                    <header><h1>News</h1></header>
+                    <h4>What is <a href="/about">dota2draft</a> ?</h4>
+
+                    <h2>UPDATE</h2>
+
+                    <br />
+					<h3>( 28/04/2019 )</h3>
+                    <ul>
+                        <li>Updated up to 7.21: added Pangolier, Dark Willow, Grimstroke and Mars. Mars and Io are disabled in Captains Mode.</li>
+                    </ul>
+
+                    <!--
+                    <h3>( 01/06/2017 )</h3>
+                    <ul>
+                        <li>Added Lycan and Treant to CM (sorry for delay).</li>
+                    </ul>
+                    <h3>( 19/03/2017 ) - 7.03 Patch</h3>
+                    <ul>
+                        <li>Added Monkey King to CM.</li>
+                    </ul>
+                    <h3>( 22/12/2016 ) - 7.01 Patch</h3>
+                    <ul>
+                        <li>Updated images for Viper & Slardar.</li>
+                        <li>Added Monkey King to CD.</li>
+                        <li>Removed Lycan, Treant and Techies from CM.</li>
+                        <li>Added Underlord and Arc Warden to CM.</li>
+                    </ul>
+                    <h3>( 24/08/2016 )</h3>
+                    <ul>
+                        <li>Moved Arc Warden to Dire.</li>
+                        <li>Added Un derlord to CD.</li>
+                        <li>Updated hero layout to 5 heroes per rows, similar to ingame layout.</li>
+                    </ul>
+                    -->
+
+                </section>
+
+                <section id="stats">
+                    <header id="statsHeader"><h1>Server Stats</h1></header>
+                    <ul>
+                        <li>Server session began - {{server_state_date}}</li>
+                        <br />
+                        <li>Drafts started for the session - {{drafts_started_count}}</li>
+                        <li>Redrafts - {{redrafts_count}}</li>
+                        <li>Rooms in progress - {{drafts_running_count}}</li>
+                        <li>Drafts ended - {{drafts_ended_count}}</li>
+                    </ul>
+                </section>
+
+            </div>
+
+            <div id="draftAndLinks">
+
+                <section id="draft">
+                    <header><h1>Drafts</h1></header>
+                    <h2 id="nicknameH2">Nickname</h2>
+                    <div class="centered"><input id="nickname" type="text" name="nickname"/></div>
+
+					
+                    <div id="mode" class="centered"><input id="cm" type="radio" name="radio" checked="checked"/>Game Mode - <label for="cm"
+                                                                                                      id="cmLabel">CM ({{cm_waiting}})</label><input id="cd" type="radio" name="radio"/><label for="cd" id="cdLabel">CD ({{cd_waiting}})</label></div>
+                    <h2 id="randomRoomH2">Random Room</h2>
+                    <div class="centered">
+                        <button id="randomRoomButton">Start</button>
+                        <button id="listRoomsButton">Show Drafts</button>
+                    </div>
+                    <h2 id="privateRoomH2">Private Room</h2>
+                    <div class="centered">
+                        <button id="createPrivateButton">Create</button>
+                    </div>
+                    <div class="centered"><input id="privateId" type="text" name="privateId"/><br/>
+                        <button id="joinPrivateButton">Join</button>
+                        <button id="spectatePrivateButton">Spectate</button>
+                    </div>
+                </section>
+
+                <section id="links">
+                    <header><h1>Links</h1></header>
+
+                    <!--
+                    
+                        <div data-href="https://dota2draft.net/" data-send="false" data-layout="button_count"
+                         data-width="450" data-show-faces="false" data-colorscheme="dark" data-action="recommend"
+                         class="fb-like"></div>
+                    <br />
+                    <div class="gplus"><div data-action="share" data-annotation="bubble" data-href="https://dota2draft.net/"
+                         class="g-plus"></div></div>
+                    
+                    -->
+
+                    <ul>
+                        <li><a href="http://blog.dota2.com/">DOTA 2 News</a></li>
+                        <li><a href="http://www.dota2wiki.com/wiki/Main_Page">Dota 2 Wiki</a></li>
+                        </br>
+                        <li><a href="http://boards.4chan.org/vg/catalog#s=dota">/d2g/</a></li>
+                        <li><a href="http://www.reddit.com/r/DotA2/">Reddit DOTA 2</a></li>
+                        <li><a href="http://www.joindota.com/en/start">joinDOTA</a></li>
+                        <li><a href="http://www.liquiddota.com/">liquidDota</a></li>
+                    </ul>
+
+                </section>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{{>mainFooter}}
+
+</body>
+</html>
