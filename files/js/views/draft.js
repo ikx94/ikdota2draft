@@ -4,6 +4,8 @@ jQuery(function ($) {
     $("button").button();
 
     $("#randomButton").hide();
+    $("#pauseButton").hide();
+    $("#pausedCaption").hide();
     $("#radiantButton").hide();
     $("#opponentChooseButton").hide();
     $("#direButton").hide();
@@ -54,8 +56,10 @@ jQuery(function ($) {
     if (mode === 'cd') {
         $('#radiantBan4').hide();
         $('#radiantBan5').hide();
+        $('#radiantBan6').hide();
         $('#direBan4').hide();
         $('#direBan5').hide();
+        $('#direBan6').hide();
     }
     if (typeof(parameters.type) != 'undefined') {
         var aux = decodeURI(parameters.type);
@@ -153,8 +157,10 @@ jQuery(function ($) {
         if (mode === 'cd') {
             $('#radiantBan4').hide();
             $('#radiantBan5').hide();
+            $('#radiantBan6').hide();
             $('#direBan4').hide();
             $('#direBan5').hide();
+            $('#direBan6').hide();
         }
         $("#spectatorLink").click(function (){
             window.open(document.location.protocol + '//' + document.domain + '/spectate?id=' + roomId, '_blank');
@@ -426,6 +432,18 @@ jQuery(function ($) {
         $('#direTimeMin').html('0');
     };
 
+    function pauseTime() {
+        $("#pausedCaption").show();
+        $('#timeSec').html('00');
+        $('#time').css('color', '#FFFFFF');
+
+        $('#radiantTimeSec').html('');
+        $('#radiantTimeMin').html('');
+
+        $('#direTimeSec').html('');
+        $('#direTimeMin').html('');
+    };
+
     function startDraft() {
         writeToChat('>>> START.');
         status = 'Ban';
@@ -452,6 +470,7 @@ jQuery(function ($) {
     };
 
     $('#banButton').click(function () {
+        $("#pausedCaption").hide();
         if (selectedHero == null)
             return;
         if (selectedHero.attr('class') == 'pictureArea locked')
@@ -462,6 +481,7 @@ jQuery(function ($) {
     });
 
     $('#pickButton').click(function () {
+        $("#pausedCaption").hide();
         if (selectedHero == null)
             return;
         if (selectedHero.attr('class') == 'pictureArea locked')
@@ -469,6 +489,11 @@ jQuery(function ($) {
         if (pickingSide != youSide)
             return;
         socket.emit('choose_hero', { choice: selectedHero.attr('id'), action: 'Pick'});
+    });
+
+    
+    $('#pauseButton').click(function () {
+        pauseTime();
     });
 
     function actualisation() {
@@ -527,6 +552,7 @@ jQuery(function ($) {
     socket.on('new_state', function (data) {
         $('#banButton').hide();
         $('#pickButton').hide();
+        $('#pauseButton').show();
 
         pickingSide = data.side;
         status = data.action;

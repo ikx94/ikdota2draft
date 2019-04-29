@@ -18,3 +18,9 @@ The web server is a node.js server using express. It communicates with clients u
 
 ## License
 [The MIT License](http://opensource.org/licenses/MIT)
+
+=============
+
+## TODO
+* Add pause functionality
+* Make hero portraits bigger
