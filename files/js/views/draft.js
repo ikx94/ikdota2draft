@@ -769,14 +769,16 @@ jQuery(function ($) {
             '2': 'kunkka',
             '3': 'kunkka',
             '4': 'kunkka',
-            '5': 'kunkka'};
+            '5': 'kunkka'
+            '6': 'kunkka'};
 
         draftToEncode.dban = {
             '1': 'kunkka',
             '2': 'kunkka',
             '3': 'kunkka',
             '4': 'kunkka',
-            '5': 'kunkka'};
+            '5': 'kunkka'
+            '6': 'kunkka'};
 
         for (var i = 1; i < 6; i++) {
             var aux = $('#radiantPick' + i).attr('src');

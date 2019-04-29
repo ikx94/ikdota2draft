@@ -1,7 +1,6 @@
 /* Font */
 @font-face {
-	font-family : 'TrojanPro';
-	src: url('trajanpro-regular.otf');
+	font-family: 'Fjalla One', sans-serif;
 }
 
 /* Main Header */
@@ -20,7 +19,8 @@
     color : #cdcdcd;
     text-align : center;
     vertical-align : middle;
-    font-family : TrojanPro, "Arial Black", Arial, serif;
+    font-family: 'Fjalla One', sans-serif;
+	font-size: 32px;
     text-shadow: 1px 1px 10px #dddddd;
 }
 
@@ -144,12 +144,12 @@ a
 #newsAndStats header h1, #draftAndLinks header h1
 {
     line-height: 40px;
-    font-size : medium;
+    font-size : 30px;
     font-weight : normal;
     color : #cdcdcd;
     text-align : center;
     vertical-align : middle;
-    font-family : TrojanPro, "Arial Black", Arial, serif;
+    font-family: 'Fjalla One', sans-serif;
     border-bottom : 2px #6d6d6b solid;
     background-color: #1d1d1b;
 }
@@ -1065,4 +1065,8 @@ table
 
 #spectatorLink {
     text-decoration: underline;
+}
+
+#body {
+	font-family: 'Fjalla One', sans-serif !important;
 }

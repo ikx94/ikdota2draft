@@ -42,7 +42,7 @@ app.disable('view layout');
 
 var server = http.createServer(app);
 var io = require('socket.io').listen(server);
-server.listen(9000);
+server.listen(80);
 
 //////////////////////
 // Routing
