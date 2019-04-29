@@ -11,13 +11,13 @@ jQuery(function ($) {
     if (bansURL != 'null') {
         var bans = decodeBans(bansURL);
 
-        for (var i = 1; i < 6; i++) {
+        for (var i = 1; i < 7; i++) {
             var element = $('#radiantBan' + i);
             element.attr('src', '/files/image/' + bans.rban[i] + '.png');
             element.attr('title', bans.rban[i]);
         }
 
-        for (var i = 1; i < 6; i++) {
+        for (var i = 1; i < 7; i++) {
             var element = $('#direBan' + i);
             element.attr('src', '/files/image/' + bans.dban[i] + '.png');
             element.attr('title', bans.dban[i]);

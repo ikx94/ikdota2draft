@@ -142,11 +142,11 @@ function encode(draft) {
 	encoded = encoded + "&ban=";
 	
 	side = 'r';
-	for (var i = 1; i < 6; i++)
+	for (var i = 1; i < 7; i++)
 		encoded = encoded + draftParameters.heroesEncodage[draftParameters.heroes.indexOf(draft[side+'ban'][i])];
 	
 	side = 'd';
-	for (var i = 1; i < 6; i++)
+	for (var i = 1; i < 7; i++)
 		encoded = encoded + draftParameters.heroesEncodage[draftParameters.heroes.indexOf(draft[side+'ban'][i])];
 	
 	return encoded;
@@ -216,19 +216,21 @@ function decodeBans(banURL) {
 		'2' : 'earthshaker',
 		'3' : 'earthshaker',
 		'4' : 'earthshaker',
-		'5' : 'earthshaker'};
+		'5' : 'earthshaker',
+		'6' : 'earthshaker'};
 		
 	bans.dban = {
 		'1' : 'earthshaker',
 		'2' : 'earthshaker',
 		'3' : 'earthshaker',
 		'4' : 'earthshaker',
-		'5' : 'earthshaker'};
+		'5' : 'earthshaker',
+		'6' : 'earthshaker'};
 		
 	var aux = banURL;
 	
 	var side = 'r';
-	for(var i = 1; i < 6; i++) {
+	for(var i = 1; i < 7; i++) {
 		if (draftParameters.heroesEncodage.indexOf(aux.substr(0,1)) != -1) {
 			bans[side+'ban'][i] = draftParameters.heroes[draftParameters.heroesEncodage.indexOf(aux.substr(0,1))];
 			aux = aux.substr(1, aux.length-1);
@@ -244,7 +246,7 @@ function decodeBans(banURL) {
 	
 	
 	var side = 'd';
-	for(var i = 1; i < 6; i++) {
+	for(var i = 1; i < 7; i++) {
 		if (draftParameters.heroesEncodage.indexOf(aux.substr(0,1)) != -1) {
 			bans[side+'ban'][i] = draftParameters.heroes[draftParameters.heroesEncodage.indexOf(aux.substr(0,1))];
 			aux = aux.substr(1, aux.length-1);
