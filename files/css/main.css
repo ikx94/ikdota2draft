@@ -1,6 +1,7 @@
 /* Font */
 @font-face {
-	font-family: 'Fjalla One', sans-serif;
+	font-family : 'TrojanPro';
+	src: url('trajanpro-regular.otf');
 }
 
 /* Main Header */
@@ -16,17 +17,16 @@
 {
     line-height: 50px;
     font-size : large;
-    color : #FFFFFF;
+    color : #cdcdcd;
     text-align : center;
     vertical-align : middle;
-    font-family: 'Fjalla One', sans-serif;
-	font-size: 32px;
+    font-family : TrojanPro, "Arial Black", Arial, serif;
     text-shadow: 1px 1px 10px #dddddd;
 }
 
 #header h1 a
 {
-    color : #FFFFFF;
+    color : #cdcdcd;
     text-shadow: 1px 1px 10px #dddddd;
     text-decoration: none;
 }
@@ -111,7 +111,7 @@ body
 {
 	width : 1066px;
 	border-radius: 10px;
-	color : #FFFFFF;
+	color : #cdcdcd;
 	border : 4px #660000 ridge;
 	background-color : #2d2d2b;
 }
@@ -144,12 +144,12 @@ a
 #newsAndStats header h1, #draftAndLinks header h1
 {
     line-height: 40px;
-    font-size : 30px;
+    font-size : medium;
     font-weight : normal;
-    color : #FFFFFF;
+    color : #cdcdcd;
     text-align : center;
     vertical-align : middle;
-    font-family: 'Fjalla One', sans-serif;
+    font-family : TrojanPro, "Arial Black", Arial, serif;
     border-bottom : 2px #6d6d6b solid;
     background-color: #1d1d1b;
 }
@@ -198,7 +198,7 @@ a
 #news li
 {
     font-size : small;
-	color : #FFFFFF;
+	color : #cdcdcd;
 	font-weight : normal;
     margin: 10px 0 5px;
 }
@@ -219,7 +219,7 @@ a
 #stats li
 {
     font-size : small;
-	color : #FFFFFF;
+	color : #cdcdcd;
 	font-weight : normal;
     margin: 10px 0 0;
 }
@@ -234,13 +234,13 @@ a
 #nicknameH2
 {
 	font-size : medium;
-	color : #FFFFFF; 
+	color : #cdcdcd; 
 	margin : 20px 20px 0 20px;
 }
 
 #draft button 
 {
-	color : #FFFFFF;
+	color : #cdcdcd;
 	font-size : small;
 	margin-top: 15px;
 	font-weight : normal;
@@ -264,7 +264,7 @@ a
 {
 	border : 1px #6d6d6b solid;
 	background-color : #1d1d1b;
-	color : #FFFFFF;
+	color : #cdcdcd;
 }
 
 #nickname
@@ -276,7 +276,7 @@ a
 #randomRoomH2, #privateRoomH2
 {
 	font-size : medium;
-	color : #FFFFFF; 
+	color : #cdcdcd; 
 	margin : 20px 20px 0 20px;
 }
 
@@ -312,7 +312,7 @@ a
 #links li
 {
     font-size : small;
-	color : #FFFFFF;
+	color : #cdcdcd;
 	font-weight : normal;
     margin: 10px 0 5px;
 }
@@ -358,7 +358,7 @@ a
 {
     line-height : 25px;
     font-size : x-small;
-    color : #FFFFFF;
+    color : #cdcdcd;
     text-align : center;
     font-weight : normal;
     vertical-align : middle;
@@ -485,7 +485,7 @@ a
 #infoRadiantName h1, #infoDireName h1
 {
     font-size : large;
-    color : #FFFFFF;
+    color : #cdcdcd;
     text-align : center;
     font-weight : normal;
     margin-top : 10px;
@@ -496,7 +496,7 @@ a
 #infoRadiantName #radiantPlayer, #infoDireName #direPlayer
 {
     font-size : x-small;
-    color : #FFFFFF;
+    color : #cdcdcd;
     text-align : right;
     font-weight : normal;
     margin-right : 25px;
@@ -507,7 +507,7 @@ a
 #time
 {
     font-size : xx-large;
-    color : #FFFFFF;
+    color : #cdcdcd;
     text-align : center;
     font-weight : normal;
     margin-top : 5px;
@@ -526,7 +526,7 @@ a
 #infoRadiantTime h1, #infoDireTime h1
 {
     font-size : large;
-    color : #FFFFFF;
+    color : #cdcdcd;
     text-align : center;
     font-weight : normal;
     margin-top : 10px;
@@ -538,7 +538,7 @@ a
 #picks, #bans
 {
     font-size : large;
-    color : #FFFFFF;
+    color : #cdcdcd;
     text-align : center;
     font-weight : normal;
     margin-top : 10px;
@@ -659,7 +659,7 @@ a
 
 #info button
 {
-    color : #000000;
+    color : #cdcdcd;
     font-size : x-small;
     font-weight : normal;
     font-family : TrojanPro, "Arial Black", Arial, serif;
@@ -690,7 +690,7 @@ a
 #chatEntryArea
 {
     margin-left : 30px;
-    color : #FFFFFF;
+    color : #cdcdcd;
     font-size : x-small;
     font-weight : normal;
     font-family : TrojanPro, "Arial Black", Arial, serif;
@@ -702,7 +702,7 @@ a
     width : 300px;
     border : 1px #6d6d6b solid;
     background-color : #1d1d1b;
-    color : #FFFFFF;
+    color : #cdcdcd;
 }
 
 #spectatorCount
@@ -712,7 +712,7 @@ a
 
 #chatScreenContent
 {
-    color : #FFFFFF;
+    color : #cdcdcd;
     font-size : small;
 }
 
@@ -917,7 +917,7 @@ a
 #about li
 {
     font-size : small;
-    color : #FFFFFF;
+    color : #cdcdcd;
     font-weight : normal;
     margin: 10px 0 5px;
 }
@@ -927,7 +927,7 @@ a
     line-height: 40px;
     font-size : medium;
     font-weight : normal;
-    color : #FFFFFF;
+    color : #cdcdcd;
     text-align : center;
     vertical-align : middle;
     font-family : TrojanPro, "Arial Black", Arial, serif;
@@ -995,7 +995,7 @@ a
     line-height: 40px;
     font-size : medium;
     font-weight : normal;
-    color : #FFFFFF;
+    color : #cdcdcd;
     text-align : center;
     vertical-align : middle;
     font-family : TrojanPro, "Arial Black", Arial, serif;
@@ -1009,7 +1009,7 @@ a
 
 table {
     font-size : small;
-    color : #FFFFFF;
+    color : #cdcdcd;
     font-weight : normal;
     font-family : Arial, serif;
     border : 5px;
@@ -1037,7 +1037,7 @@ table
 
 #roomsContent button
 {
-    color : #FFFFFF;
+    color : #cdcdcd;
     font-size : small;
     margin-top: 15px;
     font-weight : normal;
@@ -1065,8 +1065,4 @@ table
 
 #spectatorLink {
     text-decoration: underline;
-}
-
-#body {
-	font-family: 'Fjalla One', sans-serif !important;
 }
