@@ -1,0 +1,35 @@
+{
+  "name": "ikdota2draft",
+  "version": "1.0.0",
+  "description": "Dota 2 drafting simulator website",
+  "main": "dota2draft.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "forever": "^1.0.0",
+    "hbs": "^4.0.4",
+    "node-uuid": "^1.4.8",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node dota2draft.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ikx94/ikdota2draft.git"
+  },
+  "keywords": [
+    "dota",
+    "draft",
+    "website",
+    "node",
+    "express",
+    "captains"
+  ],
+  "author": "Ian Katz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ikx94/ikdota2draft/issues"
+  },
+  "homepage": "https://github.com/ikx94/ikdota2draft#readme"
+}
